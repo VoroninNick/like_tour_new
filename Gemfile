@@ -56,7 +56,7 @@ gem 'devise'
 gem 'protected_attributes'
 
 gem 'globalize'
-# gem 'rails_admin_globalize_field', github: 'VoroninNick/rails_admin_globalize_field', branch: 'allow-current-locale'
+gem 'rails_admin_globalize_field', github: 'VoroninNick/rails_admin_globalize_field', branch: 'allow-current-locale'
 
 gem 'ckeditor'
 gem 'paperclip', '~> 3.5.3'

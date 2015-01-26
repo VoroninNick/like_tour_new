@@ -1,13 +1,3 @@
-GIT
-  remote: git://github.com/VoroninNick/rails_admin_globalize_field.git
-  revision: c104b7280f7b57ffe2b5a78a5dd4393c7ceb06b4
-  branch: allow-current-locale
-  specs:
-    rails_admin_globalize_field (0.3.1)
-      globalize (>= 4.0)
-      rails (>= 4.0)
-      rails_admin (>= 0.6.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -309,7 +299,6 @@ DEPENDENCIES
   rails (= 4.1.6)
   rails-i18n
   rails_admin
-  rails_admin_globalize_field!
   rails_admin_nestable
   russian
   sass-rails (~> 4.0.3)

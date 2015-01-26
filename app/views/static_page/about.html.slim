@@ -1,0 +1,70 @@
+.page-header-banner
+  .bi style="background: url('#{asset_path('LT-add-banner-about-us.jpg')}')no-repeat center center;"
+  .page-header-banner-title
+    .row
+      .columns
+        .title
+          h2 Про нас
+  .breadcrumb-wrap
+    .row
+      .columns.large
+        ul.breadcrumbs
+          li
+            a href=root_path(locale: I18n.locale)
+              |// Головна
+          li.current
+            a href="#"
+              |Про нас
+- if @content
+  .about-wrap
+    .row
+      .columns.large-8.medium-8.end
+        .description-wrap
+          = raw @content.description
+    - if @content.photo_galleries.count > 0
+      .about-photo-banner-wrap
+        .row
+          .columns
+            h3
+              |Відвідайте наш офіс
+        .row
+          .columns
+            ul.about-image-banner
+              - @content.photo_galleries.each do |cp|
+                li
+                  .abi style="background: url('#{cp.image.url(:large)}')no-repeat center center;"
+        .row
+          .columns
+            .custom-thumbnails-wrap
+              ul#about-thumbnails
+                - @content.photo_galleries.each_with_index do |cp, i|
+                  li
+                    a data-slide-index=i href=""
+                      = embedded_svg ("LT-Ornament.svg"), class: "pager-icon"
+        .clearfix
+
+    - if @content.personnels && @content.personnels.count > 0
+      .command-wrap
+        .row
+          .columns
+            h3.right
+              |Знайомтесь з нашою командою
+        .row
+          - @content.personnels.each_with_index do |c, i|
+            .columns.large-3.medium-3 class="#{'end' if i == @content.personnels.count-1}"
+              .one-person-wrap
+                .image
+                  .pbi style="background: url('#{c.image.url(:large)}')no-repeat center center;"
+                .text-wrap
+                  .triangle-wrap
+                    .triangle
+                  .text
+                    h3
+                      = c.middle_name
+                    h3
+                      = c.first_name
+                    h5
+                      = c.work
+                    a href="mailto:#{c.email}"
+                      = c.email
+

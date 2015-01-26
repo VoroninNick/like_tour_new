@@ -1,0 +1,51 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ru:
+  static-pages:
+    publication:
+      title: "Интересные публикации"
+      other: "Другие публикации"
+  breadcrumbs:
+    home: "// Главная"
+  main-menu:
+    about: "О нас"
+    publication: "Публикации"
+    contacts: "Контакты"
+  buttons:
+    order: "Заказать"
+    even-more: "Еще больше!"
+    send: "Отправить"
+    pick: "Подобрать!"
+  title:
+    banner-form: "Подберем что-то интересное?"
+    banner-regions: "Мы работаем в следующих областях:"
+    index-publication: "Интересные публикации"
+
+  labels:
+    type: "Выберите тип"
+    city: "Выберите город"
+
+  footer:
+    titles:
+      menu: "Меню сайта:"
+      soc-networks: "Мы социальные:"
+      contacts: "Контакты:"

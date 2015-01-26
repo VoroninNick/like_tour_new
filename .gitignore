@@ -17,7 +17,7 @@
 
 /public/assets/*
 /.idea/*
-/Gemfile.lock
+#/Gemfile.lock
 /config/deploy/*
 /lib/capistrano/*
 /config/deploy.rb

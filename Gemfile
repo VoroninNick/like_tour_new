@@ -66,8 +66,8 @@ gem 'rails-i18n'
 
 gem 'truncate_html'
 
-gem 'capistrano', '~> 3.1.0'
-gem 'capistrano-rails'
+gem 'capistrano-rails', group: :development
+gem 'capistrano-rvm'
 
 gem 'simple_form', '~> 3.0.0.rc'
 
@@ -81,7 +81,7 @@ gem 'globalize-versioning'
 
 # group :development do
 #   gem "better_errors"
-#   gem 'binding_of_caller'
+#   gem 'binding_of_caller'``
 # end
 
 
